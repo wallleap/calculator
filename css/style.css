@@ -1,0 +1,123 @@
+*{
+  margin: 0;
+  padding: 0;
+  outline: none;
+}
+.calculator1{
+  width: 240px;
+  margin: 50px auto;
+  background-color: #000;
+  text-align: center;
+  border-radius: 5px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, .6);
+  padding-top: 60px;
+  margin-bottom: 100px;
+}
+
+.result input[type="text"]{
+  width: 220px;
+  height: 50px;
+  line-height: 50px;
+  margin-top: 20px;
+  margin-bottom: 5px;
+  font-size: 30px;
+  background-color: rgb(1, 1, 1);
+  color: #fff;
+  border: none;
+  text-align: right;
+  pointer-events: none;
+}
+.buttons-wrapper{
+  padding-bottom: 26px;
+}
+.row:first-of-type input[type="button"]{
+  background-color: rgb(166, 166, 166);
+  color: #040404;
+}
+.row input[type="button"]:last-child{
+  color: #fff;
+  background-color: #f2a53d;
+}
+.row input[type="button"]{
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  border-radius: 50%;
+  margin: 2px;
+  color: #fff;
+  background-color: rgb(51, 51, 51, .7);
+  border: none;
+  font-size: 28px;
+  cursor: pointer;
+}
+.row input[type="button"]:hover{
+  color: #fff;
+  background-color: rgba(103, 117, 155, 0.4);
+}
+input[type="button"].v0{
+  width: 100px;
+  border-radius: 25px;
+}
+
+
+.calculator2{
+  width: 456px;
+  margin: 30px auto;
+}
+#num1, #num2{
+  width: 200px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  font-size: 15px;
+  color: #aaa;
+  border: 2px solid skyblue;
+  border-radius: 3px;
+}
+#num1:focus, #num2:focus{
+  box-shadow: 0 0 20px rgba(135, 206, 235, .4);
+}
+#operator{
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  border: 2px solid skyblue;
+  text-align: center;
+  font-size: 14px;
+  font-weight: bold;
+  color: #f2a53d;
+  /* appearance: none; */
+}
+.calculator2 span{
+  font-size: 14px;
+  font-weight: 800;
+  color: #f2a53d;
+}
+.calculator2 p{
+  text-align: center;
+  margin: 20px 0;
+  font-size: 12px;
+  font-weight: bold;
+  color: #888888;
+}
+#res{
+  display: inline-block;
+  width: 345px;
+  height: 30px;
+  text-align: center;
+  background-color: #eee;
+  border: none;
+  box-shadow: 0 0 10px rgba(0, 0, 0, .6);
+  color: red;
+  margin: 20px;
+}
+#equels{
+  background-color: #fff;
+  border: none;
+  width: 50px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  border-radius: 3px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, .6);
+}

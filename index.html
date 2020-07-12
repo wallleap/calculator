@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>简易计算器——Luwang</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/favicon.png" type="image/png">
+</head>
+<body>
+    <div class="calculator1">
+      <form action="#" name="cal">
+        <div class="result">
+          <input type="text" name="display">
+          <input type="text" name="result">
+        </div>
+        <div class="buttons-wrapper">
+          <div class="row">
+            <input type="button" value="C" name="clear">
+            <input type="button" value="±" name="plus-minus" onclick="minus()">
+            <input type="button" value="%" name="mod" onclick="getVal(mod.value)">
+            <input type="button" value="÷" name="divide" onclick="getVal('/')">
+          </div>
+          <div class="row">
+            <input type="button" value="7" name="v7" onclick="getVal(v7.value)">
+            <input type="button" value="8" name="v8" onclick="getVal(v8.value)">
+            <input type="button" value="9" name="v9" onclick="getVal(v9.value)">
+            <input type="button" value="×" name="multiply" onclick="getVal('*')">
+          </div>
+          <div class="row">
+            <input type="button" value="4" name="v4" onclick="getVal(v4.value)">
+            <input type="button" value="5" name="v5" onclick="getVal(v5.value)">
+            <input type="button" value="6" name="v6" onclick="getVal(v6.value)">
+            <input type="button" value="-" name="subtract" onclick="getVal(subtract.value)">
+          </div>
+          <div class="row">
+            <input type="button" value="1" name="v1" onclick="getVal(v1.value)">
+            <input type="button" value="2" name="v2" onclick="getVal(v2.value)">
+            <input type="button" value="3" name="v3" onclick="getVal(v3.value)">
+            <input type="button" value="+" name="add" onclick="getVal(add.value)">
+          </div>
+          <div class="row">
+            <input type="button" value="&#8678;" name="v0" onclick="del()">
+            <input type="button" value="0" name="v0" onclick="getVal('0')">
+            <input type="button" value="." name="point" onclick="getVal(point.value)">
+            <input type="button" value="=" name="equ" onclick="getResult()">
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <div class="calculator2">
+      <p>输入两个数字，选择运算符，点击计算按钮得到运算结果</p>
+      <input type="text" name="num1" id="num1">
+      <select name="operator" id="operator">
+        <option value="+">+</option>
+        <option value="-">-</option>
+        <option value="*">×</option>
+        <option value="/">÷</option>
+        <option value="%">%</option>
+      </select>
+      <input type="text" name="num2" id="num2">
+      <!-- <span>=</span> -->
+      <input type="text" name="res" id="res" disabled>
+      <input type="button" value="计算" id="equels">
+    </div>
+    <script src="./js/script.js"></script>
+</body>
+</html>
+
+
+<!-- 甚至可以采用
+  input  id="num"
+  <li onclick="getVal("1")></li>
+  getElemetById
+-->
